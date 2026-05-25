@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alexiano Bertino HOUNDJAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barre de navigation (Tâches 1, 2, 8) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">Alexiano H.</span>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#projects" class="nav-link">Détails du projet</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#recommendations" class="nav-link">Recommandations</a></li>
+            </ul>
+            <a href="#home" class="topmenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="35px">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>À propos de moi</h2>
+        <div class="about-container">
+            <img src="avatar.png" alt="Avatar Alexiano" class="profile-img">
+
+            <div class="about-text">
+                <h3>Alexiano Bertino HOUNDJAME</h3>
+                <p>Passionné par le développement d'applications et les nouvelles technologies, je conçois des interfaces web modernes, fluides et centrées sur l'expérience utilisateur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences (Tâche 4) -->
+    <section id="skills" class="section">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><span class="skill-logo">🌐</span>
+                <p>HTML5 / CSS3</p>
+            </div>
+            <div class="skill-card"><span class="skill-logo">⚡</span>
+                <p>JavaScript</p>
+            </div>
+            <!-- Les 3 nouvelles compétences ajoutées -->
+            <div class="skill-card"><span class="skill-logo">🎨</span>
+                <p>UI/UX Design</p>
+            </div>
+            <div class="skill-card"><span class="skill-logo">🗄️</span>
+                <p>Bases de données</p>
+            </div>
+            <div class="skill-card"><span class="skill-logo">🚀</span>
+                <p>Git & GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets (Tâche 5) -->
+    <section id="projects" class="section">
+        <h2>Détails du projet</h2>
+        <div class="projects-list">
+            <div class="project-card">
+                <h3>Application E-Commerce</h3>
+                <p>Création d'une boutique en ligne complète avec panier dynamique et système de paiement sécurisé.</p>
+            </div>
+            <div class="project-card">
+                <h3>Plateforme de Gestion</h3>
+                <p>Développement d'un tableau de bord interactif pour le suivi en temps réel des tâches d'une équipe.</p>
+            </div>
+            <div class="project-card">
+                <h3>Application Météo</h3>
+                <p>Conception d'une interface connectée à une API publique affichant les prévisions locales en temps réel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Recommandations (Tâches 6, 7, 9) -->
+    <section id="recommendations" class="section">
+        <h2>Recommandations</h2>
+        <!-- Liste contenant les 3 recommandations modifiées d'origine -->
+        <div id="recommendations-list" class="recommendations-container">
+            <div class="rec-card">
+                <p>"Alexiano est un développeur rigoureux et très à l'écoute des besoins du projet."</p>
+                <h4>- Marc Duval, Chef de Projet</h4>
+            </div>
+            <div class="rec-card">
+                <p>"Un travail d'intégration web impeccable et un code CSS très propre."</p>
+                <h4>- Sophie Martin, Développeuse Senior</h4>
+            </div>
+            <div class="rec-card">
+                <p>"Très bonne maîtrise du JavaScript pour rendre l'interface vivante."</p>
+                <h4>- Thomas Lucas, Designer Web</h4>
+            </div>
+        </div>
+
+        <!-- Formulaire d'ajout -->
+        <div class="form-container">
+            <h3>Laisser une recommandation</h3>
+            <form id="rec-form">
+                <input type="text" id="rec-name" placeholder="Votre nom et poste" required>
+                <textarea id="rec-text" placeholder="Votre message..." required></textarea>
+                <button type="submit">Soumettre</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
